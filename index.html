@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tukar Coklat 🍫</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#6b3e26,#a47148);
+  font-family:Arial, sans-serif;
+  text-align:center;
+  color:white;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  padding:35px;
+  border-radius:25px;
+  width:85%;
+  max-width:400px;
+  backdrop-filter:blur(8px);
+}
+
+button{
+  padding:12px 25px;
+  font-size:16px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  margin-top:20px;
+  background:white;
+  color:#6b3e26;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+#message{
+  margin-top:25px;
+  display:none;
+  font-size:18px;
+  line-height:1.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Happy Valentine 🍫</h2>
+  <p>Ini coklat kecil sebagai tanda kasih & persahabatan 🤍</p>
+
+  <button id="openBtn">Buka Pesan 💌</button>
+
+  <div id="message">
+    <p><strong>Amsal 17:17</strong></p>
+    <p>
+      “Seorang sahabat menaruh kasih setiap waktu,<br>
+      dan menjadi seorang saudara dalam kesukaran.”
+    </p>
+    <p style="margin-top:15px;">
+      Terima kasih sudah jadi sahabat yang selalu ada 🤎
+    </p>
+  </div>
+</div>
+
+<script>
+window.onload = function(){
+  var btn = document.getElementById("openBtn");
+  var msg = document.getElementById("message");
+
+  btn.onclick = function(){
+    msg.style.display = "block";
+    btn.style.display = "none";
+  };
+};
+</script>
+
+</body>
+</html>
